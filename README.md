@@ -28,7 +28,7 @@ SeleniumでDeepLの無料デモを使う乞食自動翻訳CUIアプリ。
 - 例：端末はMacで/input/doraemon.pdfを翻訳したい場合は「pyton main.py doraemon M」
 - 各ページの邦訳版テキストファイルを、端末のデフォルトの保存先に出力してくれます
 
-## 注意
+## 注意！！！！！！！！！
 ■Windowsの場合はプロジェクトディレクトリ(DeepL_free_automation)をデスクトップに設置して実行してください。もし別の場所に配置したかったらgetJapTexts内のコマンド操作を自分で合わせてください。
  
 ■もしselenium.common.exceptions.ElementClickInterceptedException:〜のエラーが出たら...
