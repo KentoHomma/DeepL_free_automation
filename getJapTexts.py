@@ -27,7 +27,7 @@ def EngToJap(book_name, page_num, device, eng_texts_list):
 
     # webdriverを呼び出してDeepLに接続。
     URL = "https://www.deepl.com/translator"
-    driver = webdriver.Chrome("/Users/honma/Desktop/DeepLSel/chromedriver")
+    driver = webdriver.Chrome("./chromedriver")
     driver.get(URL)
     time.sleep(3)
 
