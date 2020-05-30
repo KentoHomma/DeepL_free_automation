@@ -1,5 +1,5 @@
 # DeepL_free_automation
-SeleniumでDeepLの無料デモを使う乞食自動翻訳CLIアプリ。
+SeleniumでDeepLの無料デモを使う乞食自動翻訳CUIアプリ。
 
 ### 動作確認済環境
 - python3.7.3
@@ -18,8 +18,10 @@ SeleniumでDeepLの無料デモを使う乞食自動翻訳CLIアプリ。
 - 各ページの邦訳版テキストファイルを、端末のデフォルトの保存先に出力してくれます
 
 ### 注意
-■もし以下のエラーが出たらgetJapTexts.pyのSLEEP_TIMEをテキトーにちょっといじってください。おそらく解消されます。
-selenium.common.exceptions.ElementClickInterceptedException:〜
+■もしselenium.common.exceptions.ElementClickInterceptedException:〜のエラーが出たら
+・端末のダウンロードフォルダに作られた中途半端なフォルダを消す。
+・それでもダメならgetJapTexts.pyのSLEEP_TIMEをちょっと長くたり短くしたりしてみてください。
+
 
 ■もしwebdriverが動かなかったら以下のリンクからダウンロードして、execファイルをプロジェクト直下に配置してください。
 https://chromedriver.chromium.org/downloads
