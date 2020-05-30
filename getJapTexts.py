@@ -18,20 +18,19 @@ def EngToJap(book_name, page_num, device, eng_texts_list):
         make_directory_command  = 'cd ~/Downloads ; mkdir '+ book_name
         change_fname_command    = 'cd ~/Downloads ; mv DeepL_*.txt ' # 変換後のファイル名は後回し
         move_file_to_directory  = 'cd ~/Downloads ; mv '+ book_name +'_*.txt '+ book_name 
+        driver_path             = './chromedriver'
     elif device == "W":
         make_directory_command  = 'cd ../../Downloads && md '+ book_name
         change_fname_command    = 'cd ../../Downloads && move ^"DeepL_*.txt^" ' #変換後のファイル名は後回し
         move_file_to_directory  = 'cd ../../Downloads && move ^"'+ book_name +'_*.txt^" '+ book_name 
+        driver_path             = './chromedriver.exe'
 
     # 翻訳版txtファイルの出力先ディレクトリを作る。
     os.system(make_directory_command)
 
     # webdriverを呼び出してDeepLに接続。
     URL = "https://www.deepl.com/translator"
-    if device =="M":
-        driver = webdriver.Chrome("./chromedriver")
-    elif device =="W":
-        driver = webdriver.Chrome("./chromedriver.exe")
+    driver = webdriver.Chrome(driver_path)
     driver.get(URL)
     time.sleep(3)
 
@@ -61,7 +60,12 @@ def EngToJap(book_name, page_num, device, eng_texts_list):
         time.sleep(3)
         
         # 端末ごとのデフォルトのダウンロード先にアクセスしファイル名を良い感じに改変
-        os.system(change_fname_command +'^"'+ book_name + "_" + str(page_id) +'.txt^"')
+        if device == "W":
+            os.system(change_fname_command +'^"'+ book_name + "_" + str(page_id) +'.txt^"')
+        elif device == "M":
+            os.system(change_fname_command + book_name + "_" + str(page_id) +'.txt')
+
+        # Downloads/book_name/以下に移動
         os.system(move_file_to_directory)
 
 
