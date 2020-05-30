@@ -1,5 +1,6 @@
 import os
 import time
+import subprocess
 from selenium import webdriver
 
 
@@ -18,16 +19,19 @@ def EngToJap(book_name, page_num, device, eng_texts_list):
         change_fname_command    = 'cd ~/Downloads ; mv DeepL_*.txt ' # 変換後のファイル名は後回し
         move_file_to_directory  = 'cd ~/Downloads ; mv '+ book_name +'_*.txt '+ book_name 
     elif device == "W":
-        make_directory_command  = 'cd ~/Downloads ; md '+ book_name
-        change_fname_command    = 'cd ~/Downloads ; move DeepL_*.txt ' #変換後のファイル名は後回し
-        move_file_to_directory  = 'cd ~/Downloads ; move '+ book_name +'_*.txt '+ book_name 
+        make_directory_command  = 'cd ../../Downloads && md '+ book_name
+        change_fname_command    = 'cd ../../Downloads && move ^"DeepL_*.txt^" ' #変換後のファイル名は後回し
+        move_file_to_directory  = 'cd ../../Downloads && move ^"'+ book_name +'_*.txt^" '+ book_name 
 
     # 翻訳版txtファイルの出力先ディレクトリを作る。
     os.system(make_directory_command)
 
     # webdriverを呼び出してDeepLに接続。
     URL = "https://www.deepl.com/translator"
-    driver = webdriver.Chrome("./chromedriver")
+    if device =="M":
+        driver = webdriver.Chrome("./chromedriver")
+    elif device =="W":
+        driver = webdriver.Chrome("./chromedriver.exe")
     driver.get(URL)
     time.sleep(3)
 
@@ -57,10 +61,10 @@ def EngToJap(book_name, page_num, device, eng_texts_list):
         time.sleep(3)
         
         # 端末ごとのデフォルトのダウンロード先にアクセスしファイル名を良い感じに改変
-        os.system(change_fname_command + book_name + "_" + str(page_id) +'.txt')
+        os.system(change_fname_command +'^"'+ book_name + "_" + str(page_id) +'.txt^"')
         os.system(move_file_to_directory)
 
 
 
 if __name__ == "__main__":
-    JapToEng()
+    EngToJap()
