@@ -24,9 +24,11 @@ SeleniumでDeepLの無料デモを使う乞食自動翻訳CUIアプリ。
 - 各ページの邦訳版テキストファイルを、端末のデフォルトの保存先に出力してくれます
 
 ### 注意
-■もしselenium.common.exceptions.ElementClickInterceptedException:〜のエラーが出たら
-・端末のダウンロードフォルダに作られた中途半端なフォルダを消す。
-・それでもダメならgetJapTexts.pyのSLEEP_TIMEをちょっと長くたり短くしたりしてみてください。
+■もしselenium.common.exceptions.ElementClickInterceptedException:〜のエラーが出たら、
+・https://chromedriver.chromium.org/downloads で自分のchromeのバージョンに合ったdriverをダウンロード。
+　→execファイルをDeepL_free_automation直下に配置する。
+・それでもダメなら端末のダウンロードフォルダに作られた中途半端なフォルダを消してもう一回実行。
+・それでもダメならgetJapTexts.pyのSLEEP_TIMEをちょっと長くたり短くしたりして何度か実行。
 
 
 ■もしwebdriverが動かなかったら以下のリンクからダウンロードして、execファイルをプロジェクト直下に配置してください。
