@@ -21,5 +21,5 @@ SeleniumでDeepLの無料デモを使う乞食自動翻訳CLIアプリ。
 ■もし以下のエラーが出たらgetJapTexts.pyのSLEEP_TIMEをテキトーにちょっといじってください。おそらく解消されます。
 selenium.common.exceptions.ElementClickInterceptedException:〜
 
-■もしwebdriverが動かなかったら以下のリンクからダウンロードして、execファイルをDeepLSel直下に配置してください。
+■もしwebdriverが動かなかったら以下のリンクからダウンロードして、execファイルをプロジェクト直下に配置してください。
 https://chromedriver.chromium.org/downloads
