@@ -7,7 +7,7 @@ SeleniumでDeepLの無料デモを使う乞食自動翻訳CUIアプリ。
 - GoogleChrome ver 83.0.4103.61 64bit
 
 ### 各種部品インストール
-■osX
+■osX(※bash)
 - python3 -m venv hoge(仮想環境名)
 - source hoge/bin/activate
 - pip install -r requirements.txt
