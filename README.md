@@ -19,8 +19,8 @@ SeleniumでDeepLの無料デモを使う乞食自動翻訳CUIアプリ。
 
 ## chromedriverのインストール
 - https://chromedriver.chromium.org/downloads からOSとchromeのバージョンに合ったchromedriverをダウンロード。
-- windowsの場合は【chromedriver.exe】をDeepL_free_automation直下に配置
-- Macの場合は　　【chromedriver】をDeepL_free_automation直下に配置
+- windowsの場合は【chromedriver.exe】をAuto_DeepL直下に配置
+- Macの場合は　　【chromedriver】をAuto_DeepL直下に配置
 
 ## 使い方
 - inputディレクトリに翻訳したいpdfファイルを置く
@@ -29,7 +29,7 @@ SeleniumでDeepLの無料デモを使う乞食自動翻訳CUIアプリ。
 - 各ページの邦訳版テキストファイルを、端末のデフォルトの保存先に出力してくれます
 
 ## 注意！！！！！！！！！
-■Windowsの場合はプロジェクトディレクトリ(DeepL_free_automation)をデスクトップに設置して実行してください。もし別の場所に配置したかったらgetJapTexts内のコマンド操作を自分で合わせてください。
+■Windowsの場合はAuto_DeepLをデスクトップに設置して実行してください。もし別の場所に配置したかったらgetJapTexts.py内のコマンド操作を自分で合わせてください。
  
 ■もしselenium.common.exceptions.ElementClickInterceptedException:〜のエラーが出たら...
 - 端末のダウンロードフォルダに作られた中途半端なフォルダやファイルを消してもう一回実行。
