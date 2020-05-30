@@ -3,3 +3,4 @@
 /.vscode
 __pycache__
 transvenv
+.DS_Store
