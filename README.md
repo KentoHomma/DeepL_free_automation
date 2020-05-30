@@ -32,7 +32,5 @@ SeleniumでDeepLの無料デモを使う乞食自動翻訳CUIアプリ。
 ■Windowsの場合はプロジェクトディレクトリ(DeepL_free_automation)をデスクトップに設置して実行してください。もし別の場所に配置したかったらgetJapTexts内のコマンド操作を自分で合わせてください。
  
 ■もしselenium.common.exceptions.ElementClickInterceptedException:〜のエラーが出たら、
-- https://chromedriver.chromium.org/downloads で自分のchromeのバージョンに合ったdriverをダウンロード。
-- 実行ファイル(windowsならchromedriver.exe, Macならchromedriver)をDeepL_free_automation直下に配置する。
 - それでもダメなら端末のダウンロードフォルダに作られた中途半端なフォルダやファイルを消してもう一回実行。
 - それでもダメならgetJapTexts.pyのSLEEP_TIMEをちょっと長くたり短くしたりして何度か実行。
