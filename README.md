@@ -2,9 +2,9 @@
 SeleniumでDeepLの無料デモを使う乞食自動翻訳CLIアプリ。
 
 ### 動作確認済環境
-python3.7.3
-MacOS Catalina 10.15.4　/ Windows10
-GoogleChrome ver 83.0.4103.61 64bit
+- python3.7.3
+- MacOS Catalina 10.15.4　/ Windows10
+- GoogleChrome ver 83.0.4103.61 64bit
 
 ### 各種部品インストール
 - python3 -m venv hoge(仮想環境名)
