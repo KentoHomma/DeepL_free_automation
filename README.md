@@ -13,9 +13,9 @@ SeleniumでDeepLの無料デモを使う乞食自動翻訳CLIアプリ。
 
 ### 使い方
 - inputディレクトリに翻訳したいpdfファイルを置く
-- CLIで「python main.py 【拡張子抜きのpdfファイル名】 【MまたはW】」を実行
-- 　例：「pyton main.py doraemon M」→ 端末はMacで/input/doraemon.pdfを翻訳
-- ③各ページの邦訳版テキストファイルを、端末のデフォルトの保存先に出力してくれます
+- 「python main.py {拡張子抜きのpdfファイル名} {MまたはW}」を実行
+- 　例：端末はMacで/input/doraemon.pdfを翻訳→→→「pyton main.py doraemon M」
+- 各ページの邦訳版テキストファイルを、端末のデフォルトの保存先に出力してくれます
 
 ### 注意
 ■もし以下のエラーが出たらgetJapTexts.pyのSLEEP_TIMEをテキトーにちょっといじってください。おそらく解消されます。
