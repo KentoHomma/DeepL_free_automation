@@ -10,7 +10,8 @@ from pdfminer.pdfpage import PDFPage
 def pdfToText(book_name, page_num):
     """
     pdfをテキストに変換するメソッド。
-    最終的にmidium/txt/[book_name]フォルダにページごとにtxtとして出力される。
+    最終的に全体、ページごと、テキストボックスごとの文章の三次元リストが返される。
+    ついでにmidium/txt/[book_name]フォルダにページごとにtxtとして出力される。
     """ 
 
     # よく使う変数を予めまとめておく
