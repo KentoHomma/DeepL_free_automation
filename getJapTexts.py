@@ -35,7 +35,7 @@ def EngToJap(book_name, page_num, device, eng_texts_list):
     time.sleep(3)
 
     # cookie利用の忠告を閉じる。これが残ってると謎の不具合が出る。
-    driver.find_element_by_class_name('dl_cookie_footer__close_btn').click()
+    driver.find_element_by_class_name('dl_cookieBanner--buttonAll').click()
     time.sleep(3)
     
     # PDF内の1ページごとに処理をしていく。
