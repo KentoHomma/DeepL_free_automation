@@ -4,4 +4,4 @@ pycryptodome==3.9.7
 PyPDF2==1.26.0
 selenium==3.141.0
 sortedcontainers==2.1.0
-urllib3==1.25.9
+urllib3==1.26.5
