@@ -1,5 +1,5 @@
 # DeepL_free_automation
-SeleniumでDeepLの無料デモを使う乞食自動翻訳CUIアプリ。
+SeleniumでDeepLの無料デモを使う自動翻訳CUIアプリ。
 
 ## 動作確認済環境
 - python3.7.3
